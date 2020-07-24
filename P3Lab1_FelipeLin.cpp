@@ -4,7 +4,10 @@ using namespace std;
 int main(void)
 {
     int menu;
-    cout << "1. Ejercicio 1\n2. Ejercicio 2 \n3. Salida\n";
+    cout << "1. Ejercicio 1\n
+             2. Ejercicio 2 \n
+             3. Salida\n";
+             
     cout << "Ingrese la opcion: ";
     cin >> menu;
     while (menu != 3)
@@ -14,29 +17,25 @@ int main(void)
         {
         case 1:
         {
-            double x, result;
+            double x, resultado_1 = 0;
             cout << "Ingrese la x: ";
             cin >> x;
-            result = 1 / (1 + exp(-x));
+            resultado_1 = 1 / (1 + exp(-x));
 
-            cout << "La respuesta de la funcion es: " << result << "\n";
-            result = 0;
+            cout << "La respuesta de la funcion es: " << resultado_1 << "\n";
             break;
         }
         case 2:
         {
-            double x2, result2, calculo;
+            double s, resultado_2 = 0, calculo = 0;
             cout << "Ingrese la s: ";
-            cin >> x2;
-            for (int i = 0; i <= x2; i++)
+            cin >> s;
+            for (int i = 0; i <= s; i++)
             {
-                cout << ((2 * i) - 1);
-                cout << ((2 * i) + 1);
                 calculo = calculo + ((2 * i) - 1) * ((2 * i) + 1);
             }
-            result2 = calculo;
-            cout << "La respuesta de la funcion es: " << result2 << "\n";
-            result2 = 0;
+            resultado_2 = calculo;
+            cout << "La respuesta de la funcion es: " << resultado_2 << "\n";
             break;
         }
         default:
@@ -45,7 +44,10 @@ int main(void)
             break;
         }
 
-        cout << "1. Ejercicio 1\n2. Ejercicio 2 \n3. Salida\n";
+        cout << "1. Ejercicio 1\n
+                 2. Ejercicio 2 \n
+                 3. Salida\n";
+
         cout << "Ingrese la opcion: ";
         cin >> menu;
     }
