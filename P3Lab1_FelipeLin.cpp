@@ -4,9 +4,7 @@ using namespace std;
 int main(void)
 {
     int menu;
-    cout << "1. Ejercicio 1\n
-             2. Ejercicio 2 \n
-             3. Salida\n";
+    cout << "1. Ejercicio 1\n2. Ejercicio 2\n3. Salida\n";
              
     cout << "Ingrese la opcion: ";
     cin >> menu;
@@ -44,9 +42,7 @@ int main(void)
             break;
         }
 
-        cout << "1. Ejercicio 1\n
-                 2. Ejercicio 2 \n
-                 3. Salida\n";
+        cout << "1. Ejercicio 1\n2. Ejercicio 2 \n3. Salida\n";
 
         cout << "Ingrese la opcion: ";
         cin >> menu;
